@@ -23,7 +23,7 @@
     <hr>
     <br>
     <p align="center">
-      <strong>dApp Release - v6.2.2-alpha2</strong>
+      <strong>dApp Release</strong>
 <!--       <br>
       <strong>By: Ryan Hatch</strong> -->
       <br>
@@ -40,8 +40,17 @@
 <p align="center"><img src="https://img.shields.io/badge/Name:-Zencrypt-0A2647?style=for-the-badge" alt="Project Name"><img src="https://img.shields.io/badge/Author-Ryan%20S%20Hatch-0A2647?style=for-the-badge" alt="Project Author"> <img src="https://img.shields.io/badge/Started-January%202021-144272?style=for-the-badge" alt="Project Start Date"> <img src="https://img.shields.io/badge/Updated-Nov%2017%2C%202025-205295?style=for-the-badge" alt="Project Last Updated On"></p>
 <p align="center"><img src="https://img.shields.io/badge/Type:-Decentralized%20Application-144272?style=for-the-badge" alt="Project Type"> <img src="https://img.shields.io/badge/Stage:-Alpha%20Web3-205295?style=for-the-badge" alt="Project Stage"> <img src="https://img.shields.io/badge/Version-v6.2.2--alpha2-2C74B3?style=for-the-badge" alt="Project Version"></p>
 <hr>
+    <h2>Project status:</h2>
+<p><strong>Zencrypt</strong> is currently undergoing a repo and branch organization pass, including documentation cleanup, branch pruning, and version tag/release standardization.</p>
+<p>Expect some temporary inconsistencies in branch names, folder layout, and docs while this work is in progress.</p>
+<p><strong>Stable entry points</strong></p>
+<ul>
+  <li>Code: <code>main</code></li>
+  <li>Versions: <code>Releases / Tags</code></li>
+</ul>
+<hr>
 <div class="dapp">
-  <h1>dApp v6.2.2-alpha2 and CLI v4.2</h1>
+  <h1>dApp and CLI</h1>
   <ul>
     <li><a href="README.md">What is Zencrypt</a></li>
     <li><a href="cipher/zencrypt-cli.md">Getting To Know About The Zencrypt CLI</a></li>
@@ -86,7 +95,7 @@
 </div>
 <hr>
 <div class="table-of-contents">
-  <h1 align="center">Zencrypt <code>v6.2.2-alpha2</code> Decentralized Application:</h1>
+  <h1 align="center">Zencrypt Decentralized Application:</h1>
 <hr>
   <p align="center"><img src="https://img.shields.io/badge/Purpose-Encryption%20Platform-0A2647?style=for-the-badge" alt="Project Purpose"> <img src="https://img.shields.io/badge/Focus-Web3%20Security%20Development-144272?style=for-the-badge" alt="Project Focus"> <img src="https://img.shields.io/badge/Milestones-Web2%20to%20Web3%20Migration-205295?style=for-the-badge" alt="Project Milestones"></p>
   <p align="center"><img src="https://img.shields.io/badge/Testing Code:-Snyk-0A2647?style=for-the-badge" alt="Snyk Tests"> <img src="https://img.shields.io/badge/Testing App:-OWASP%20ZAP-144272?style=for-the-badge" alt="Testing"> <img src="https://img.shields.io/badge/Quality%20Assurance-8.5/10-205295?style=for-the-badge" alt="Quality Assurance">
@@ -219,7 +228,7 @@ The move to web3 is more than a technology choice. It changes what a user accoun
 <h2>Changelog:</h2>
 <h3>Logs of Recent Updates:</h3>
 <li>Jan 20 2025 - Updated comments and added a more simple structure for the changes to be made.</li>
-<li>Jan 21st 2025 - Merged the CLI into a webapp using the Flask framework. The current version is being hosted at <a href="https://zencrypt.app">Zencrypt.app</a></li>
+<li>Jan 21st 2025 - Merged the CLI into a webapp using the Flask framework. The current version of the web-application is being hosted at <a href="https://zencrypt.app">zencrypt.app</a></li>
 <li>Jan 22nd 2025 - Users can upload files for encryption and decryption.</li>
 <li>Jan 26th 2025 - Allows users to manage sessions by creating an account and logging in.</li>
 <li>Jan 27th 2025 - Fully merged SQLite and SQLAlchemy into the backend for user authentication and session management.</li>
@@ -252,8 +261,8 @@ The move to web3 is more than a technology choice. It changes what a user accoun
 <h2 id="installation">Installation</h2>
 <p> To install Zencrypt, you will need to follow these steps: </p>
 <ol>
-  <li>Clone the alpha2 branch of the repository with the command:<br><code>git clone -b alpha2 https://github.com/ryanshatch/zencrypt-v6.2.2-alpha.git</code>. </li>
-    <li>Navigate to the project directory with the command: <code>cd zencrypt-v6.2.2-alpha</code>. </li>
+  <li>Clone the alpha2 branch of the repository with the command:<br><code>git clone -b alpha2 https://github.com/ryanshatch/zencrypt_dapp.02.git</code>. </li>
+    <li>Navigate to the project directory with the command: <code>cd zencrypt-dapp.02</code>. </li>
     <li>First, you will need to install Python 3.7 or higher. You can download Python from the official website: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>. </li>
         <li>Next, you will need to install pip, the Python package manager. You can install pip by following the instructions on the official website: <a href="https://pip.pypa.io/en/stable/installation/">https://pip.pypa.io/en/stable/installation/</a>. </li>
         <li>Once you have installed Python and pip, you can create a virtual environment with the command: <code>python -m venv venv</code>. </li>
@@ -274,7 +283,7 @@ The move to web3 is more than a technology choice. It changes what a user accoun
     <h2 id="examples">Web3 Login and CLI (v4.2-alpha) Examples:</h2>
     <h3 align="center">Web3 Wallet Login:</h3>
     <center>
-      <img alt="Web3 Login" src="WEB3-login.JPG" style="width: 100%; height: 100%;" />
+      <img alt="Web3 Login" src="https://github.com/ryanshatch/zencrypt_dapp.02/blob/main/WEB3-login.JPG" style="width: 100%; height: 100%;" />
     </center>
     <h3 align="center">Hashing:</h3>
     <center>
