@@ -30,7 +30,7 @@
     </p>
     <p align="center">
       <a href="#table-of-contents">Table of Contents</a><br>
-       <a href="#introduction">Introduction</a> • <a href="#features">Features</a> • <a href="#installation">Installation</a> • <a href="#usage">Usage</a> • <a href="#examples">Examples</a> • <a href="#contributing">Contributing</a> • <a href="#disclaimer">Disclaimer</a> • <a href="#license">License</a> • <a href="#contact">Contact</a>
+       <a href="#introduction">Introduction</a> • <a href="#features">Features</a> • <a href="#examples">Examples</a> • <a href="#contributing">Contributing</a> • <a href="#disclaimer">Disclaimer</a> • <a href="#license">License</a> • <a href="#contact">Contact</a>
     </p>
     <hr>
     <p align="center">
@@ -258,7 +258,7 @@ The move to web3 is more than a technology choice. It changes what a user accoun
   <li>Secure key storage in dedicated directory</li>
   <li>SQLite database with encrypted storage</li>
 </ul>
-<h2 id="installation">Installation</h2>
+<!-- <h2 id="installation">Installation</h2>
 <p> To install Zencrypt, you will need to follow these steps: </p>
 <ol>
   <li>Clone the alpha2 branch of the repository with the command:<br><code>git clone -b alpha2 https://github.com/ryanshatch/zencrypt_dapp.02.git</code>. </li>
@@ -278,7 +278,7 @@ The move to web3 is more than a technology choice. It changes what a user accoun
   <li>Open a web browser and navigate to <code>http://localhost:5000</code>. </li>
   <li>Click <strong>Connect Phantom</strong> (or Solflare) to authenticate with your Solana wallet. </li>
   <li>Once authenticated, use the dApp to hash, encrypt, and decrypt text and files. </li>
-</ol>
+</ol> -->
 <hr>
     <h2 id="examples">Web3 Login and CLI (v4.2-alpha) Examples:</h2>
     <h3 align="center">Web3 Wallet Login:</h3>
