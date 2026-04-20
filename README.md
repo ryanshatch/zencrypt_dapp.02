@@ -6,7 +6,7 @@
   Last Updated: April 8th 2026      |*******************************************************
   Version: 6.2.2-alpha2             |*******************************************************
 ********************************************************************************************
-*-****************************** Zencrypt v6.2.2-alpha2 |***********************************
+*-****************************** Zencrypt dapp |********************************************
 <><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
 |              Zencrypt dApp is a Solana-powered Flask application that can:               |
 |       - Authenticate users via Solana wallet signature (no password required).           |
@@ -38,7 +38,7 @@
       <strong>Developed By: Ryan Hatch</strong>
     <p align="center"> &copy; 2026 Ryan Hatch <br> All Rights Reserved.<br><i><br>This software is proprietary and owned by Ryan Hatch. Unauthorized use, modification, or distribution is prohibited.</i> </p>
 <p align="center"><img src="https://img.shields.io/badge/Name:-Zencrypt-0A2647?style=for-the-badge" alt="Project Name"><img src="https://img.shields.io/badge/Author-Ryan%20S%20Hatch-0A2647?style=for-the-badge" alt="Project Author"> <img src="https://img.shields.io/badge/Started-January%202021-144272?style=for-the-badge" alt="Project Start Date"> <img src="https://img.shields.io/badge/Updated-Nov%2017%2C%202025-205295?style=for-the-badge" alt="Project Last Updated On"></p>
-<p align="center"><img src="https://img.shields.io/badge/Type:-Decentralized%20Application-144272?style=for-the-badge" alt="Project Type"> <img src="https://img.shields.io/badge/Stage:-Alpha%20Web3-205295?style=for-the-badge" alt="Project Stage"> <img src="https://img.shields.io/badge/Version-v6.2.2--alpha2-2C74B3?style=for-the-badge" alt="Project Version"></p>
+<p align="center"><img src="https://img.shields.io/badge/Type:-Decentralized%20Application-144272?style=for-the-badge" alt="Project Type"> <img src="https://img.shields.io/badge/Stage:-Alpha%20Web3-205295?style=for-the-badge" alt="Project Stage"> <img src="https://img.shields.io/badge/Version-dApp.Alpha-2C74B3?style=for-the-badge" alt="Project Version"></p>
 <hr>
     <h2>Project status:</h2>
 <p><strong>Zencrypt</strong> is currently undergoing a repo and branch organization pass, including documentation cleanup, branch pruning, and version tag/release standardization.</p>
@@ -113,9 +113,9 @@
 </code></h4>
 <hr>
 
-<h5>I started this project with a CLI script that used core encryption functions and was designed with the purpose of parsing sensitive information offline to be encrypted or decrypted.<br><br> This project was intended to merge the final CLI program into a full fledged webapp that has all of the same functions, and with <code>version 6-alpha</code> that goal was reached — a complete cipher handling everything from hashing, AES, RSA, and fully implemented PGP functionality.
+<h5>I started this project with a CLI script that used core encryption functions and was designed with the purpose of parsing sensitive information offline to be encrypted or decrypted.<br><br> This project was intended to merge the final CLI program into a full fledged dApp/webapp that has all of the same functions, with a complete cipher handling everything from hashing, AES, RSA, and fully implemented PGP functionality.
 <br><br>
-With <code>version 6.2.2-alpha2</code>, I took the next step I had been planning for a while: moving Zencrypt from web2 to web3. This version replaces the traditional email and password login system with Solana wallet-based authentication, meaning users prove their identity by signing a cryptographic challenge with their own wallet instead of storing a password anywhere on the server. No email, no password, no shared secret — just a public key and a signature.</h5>
+With <code>Zencrypt dApp</code>, I took the next step I had been planning for a while: moving Zencrypt from web2 to web3. This version replaces the traditional email and password login system with Solana wallet-based authentication, meaning users prove their identity by signing a cryptographic challenge with their own wallet instead of storing a password anywhere on the server. No email, no password, no shared secret — just a public key and a signature.</h5>
 </p>
 <h5>
 I restructured the backend from a monolithic <code>webapp.py</code> into a clean set of Flask Blueprints — auth, gate, crypto, and billing — so that each concern is fully separated and independently testable. The wallet authentication flow uses Ed25519 signature verification via PyNaCl, with nonce-based anti-replay protection baked in from the start. On top of that, I integrated Solana Pay so that users can purchase access plans directly with SOL, keeping the entire user journey on-chain.
@@ -123,7 +123,7 @@ I restructured the backend from a monolithic <code>webapp.py</code> into a clean
 I learned that moving to web3 is not just a technology swap — it forces you to rethink what identity even means in your system. When a wallet address becomes the primary key for a user record, every assumption about password resets, email lookups, and session expiry has to be revisited. Keeping the encryption core unchanged while swapping out the entire auth layer was a good test of how well the modular design from the previous version had actually held up.
 </h5>
 
-> This version represents the transition point I had been writing about since `version 6`. Zencrypt went from a hash generator, to a full cipher suite, to a web platform, and now to a decentralized application. Each step was a deliberate build on the one before it, and this step in particular reinforced why **`keeping it modular`** matters — the encryption engine did not have to change at all, only the door in front of it did.</p>
+> This dApp represents the transition point I had been writing about since `Version 6-Alpha`. Zencrypt went from a hash generator, to a full cipher suite, to a web platform, and now to a decentralized application. Each step was a deliberate build on the one before it, and this step in particular reinforced why **`keeping it modular`** matters — the encryption engine did not have to change at all, only the door in front of it did.</p>
 
 <hr>
 
@@ -131,7 +131,7 @@ I learned that moving to web3 is not just a technology swap — it forces you to
 ### 1. **Project Purpose and Evolution**
 
 - **Core Functionality:**  
-I started Zencrypt as a simple command-line tool focused primarily on SHA-256 hash generation and verification, then steadily expanded its capabilities to include file encryption, RSA-based PGP features, and a full web interface. Version 6-alpha marked the completion of the web2 platform — a modular, scalable Flask app with JWT authentication, SQLAlchemy ORM, and a React front end. Version 6.2.2-alpha2 is the first step into web3: the encryption and hashing features remain unchanged, but the entire authentication layer has been replaced with Solana wallet-based login.
+I started Zencrypt as a simple command-line tool focused primarily on SHA-256 hash generation and verification, then steadily expanded its capabilities to include file encryption, RSA-based PGP features, and a full web interface. Version 6-Alpha marked the completion of the web2 platform — a modular, scalable Flask app with JWT authentication, SQLAlchemy ORM, and a React front end. Zencrypt dApp is my first step into web3: the encryption and hashing features remain unchanged, but the entire authentication layer has been replaced with Solana wallet-based login.
 
 - **Evolutionary Path:**  
 The progression from CLI to webapp to dApp followed a consistent philosophy: add capability without breaking what already works. In alpha2, email and password fields on the User model were made nullable and a `wallet_address` column was added to support wallet-only accounts, all while keeping backward compatibility for any existing email-based users. I made sure the cryptographic core — Fernet, AES, PGP — stayed exactly as it was, because the goal was not to rebuild Zencrypt but to give it a new front door.
@@ -142,9 +142,9 @@ The progression from CLI to webapp to dApp followed a consistent philosophy: add
 
 - **Backend Architecture:** I refactored the backend from a single `webapp.py` file into a set of Flask Blueprints, each with a single responsibility: `auth` handles wallet challenge and verification, `gate` protects the encryption routes, `crypto` exposes the hashing and cipher API, and `billing` manages Solana Pay subscriptions. This restructuring made each module independently testable and kept the application factory pattern clean. SQLAlchemy ORM and Flask-Migrate are still used for modeling users, hashes, and encryption keys, and the database remains SQLite in development with a straightforward path to swap it for another backend if needed.
 
-- **Security Implementation:** The authentication model in alpha2 is fundamentally different from the previous version. Instead of storing a password hash and issuing a JWT on credential match, the server now issues a one-time cryptographic nonce, waits for the client to return that nonce signed by their Solana wallet, and verifies the Ed25519 signature server-side using `PyNaCl`'s `VerifyKey`. No private key ever leaves the user's wallet. On successful verification, the user record is upserted by wallet address and a short-lived JWT is issued for the session. Nonces are stored in-memory with a ten-minute expiry and destroyed on use, preventing replay attacks.
+- **Security Implementation:** The authentication model in alpha2 is fundamentally different from the previous version, 'v6-Alpha'. Instead of storing a password hash and issuing a JWT on credential match, the server now issues a one-time cryptographic nonce, waits for the client to return that nonce signed by their Solana wallet, and verifies the Ed25519 signature server-side using `PyNaCl`'s `VerifyKey`. No private key ever leaves the user's wallet. On successful verification, the user record is upserted by wallet address and a short-lived JWT is issued for the session. Nonces are stored in-memory with a ten-minute expiry and destroyed on use, preventing replay attacks.
 
-- **Cryptographic Foundation:** The existing encryption stack — Fernet for text, AES in CFB mode for files, RSA PGP for asymmetric operations — is carried forward unchanged from version 6-alpha. On the web3 side, Ed25519 is used exclusively for wallet identity verification via `PyNaCl==1.5.0`, and Solana base58 address encoding is handled by `base58==2.1.1`. Keeping these two cryptographic layers cleanly separated — one for identity, one for data — helped me understand how a system can adopt blockchain primitives without having to rewrite its core security logic.
+- **Cryptographic Foundation:** The existing encryption stack — Fernet for text, AES in CFB mode for files, RSA PGP for asymmetric operations — is carried forward unchanged from version 6-Alpha. On the web3 side, Ed25519 is used exclusively for wallet identity verification via `PyNaCl==1.5.0`, and Solana base58 address encoding is handled by `base58==2.1.1`. Keeping these two cryptographic layers cleanly separated — one for identity, one for data — helped me understand how a system can adopt blockchain primitives without having to rewrite its core security logic.
 
 - **Frontend Integration:** The wallet connection UI uses the Phantom browser extension's `window.solana` API. When a user clicks Connect, the frontend calls `window.solana.connect()` to get the public key, fetches a nonce from `GET /auth/nonce`, asks the wallet to sign it with `signMessage`, and posts the result to `POST /auth/verify`. Solflare and Ledger Live are also supported through the same flow. The Navbar component was updated to display a truncated wallet address in place of a username once the user is authenticated via wallet.
 
@@ -198,21 +198,21 @@ The progression from CLI to webapp to dApp followed a consistent philosophy: add
 
 ### 4. **Documentation, Flowcharts, and Future Enhancements**
 
-**Extensive Documentation:** Alpha2 ships with a full set of wallet authentication documents covering setup, quick reference, implementation details, and a migration guide for existing email-based users. I made sure these documents explain both the how and the why behind the design choices, just like the whitepapers in the earlier versions, so that anyone reading the codebase can understand the reasoning without having to reverse-engineer the implementation.
+**Extensive Documentation:** The dApp ships with a full set of wallet authentication documents covering quick reference and a migration guide for existing email-based users. I made sure these documents explain both the how and the why behind the design choices, just like the whitepapers in the earlier versions, so that anyone reading the codebase can understand the reasoning without having to reverse-engineer the implementation.
 
-**Whitepapers:** The existing whitepapers from version 6 are carried forward intact because the underlying encryption design has not changed. The new wallet auth documents — `WALLET_AUTH_SETUP.md`, `WALLET_AUTH_QUICK_REFERENCE.md`, `WALLET_AUTH_IMPLEMENTATION_SUMMARY.md`, `MIGRATION_GUIDE.md`, and `DELIVERY_SUMMARY.md` — complement those whitepapers by documenting the web3 layer specifically.
+**Whitepapers:** The existing whitepapers from version 6-Alpha are carried forward intact because the underlying encryption design has not changed. The new wallet auth documents — `WALLET_AUTH_SETUP.md`, `WALLET_AUTH_QUICK_REFERENCE.md`, `WALLET_AUTH_IMPLEMENTATION_SUMMARY.md`, `MIGRATION_GUIDE.md`, and `DELIVERY_SUMMARY.md` — complement those whitepapers by documenting the web3 layer specifically.
 
 **Enhancement Plans:** The immediate next steps are to replace the in-memory nonce store with a proper database-backed or Redis-backed store for multi-instance deployments, add real on-chain RPC verification to the Solana Pay confirmation endpoint, and expand wallet support beyond Phantom and Solflare. Longer term, the plan is to explore moving encryption key ownership fully on-chain so that users hold their keys in their wallet rather than in the server database.
 
-**Professional Skills and ePortfolio:** Building the web3 layer on top of the existing web2 foundation taught me that a well-structured modular codebase is one of the most valuable things you can invest in early. The fact that the encryption engine required zero changes when the authentication layer was completely replaced is a direct result of the design choices made in version 6.
+**Professional Skills and ePortfolio:** Building the web3 layer on top of the existing web2 foundation taught me that a well-structured modular codebase is one of the most valuable things you can invest in early. The fact that the encryption engine required zero changes when the authentication layer was completely replaced is a direct result of the design choices made in version 6 Alpha.
 
 ---
 
 ### 5. **Deployment and Operational Considerations**
 
-**Deployment Configuration:** Zencrypt alpha2 is configured for cloud deployment using Gunicorn as the web server, with the same `render.yaml` setup from version 6. The two new runtime dependencies — `PyNaCl==1.5.0` and `base58==2.1.1` — are added to `requirements.txt` and require no special build steps. Environment variables for `JWT_SECRET`, `MERCHANT_WALLET`, and `RPC_URL` must be set before deployment; these are documented in the `.env` template included in the repository.
+**Deployment Configuration:** Zencrypt alpha2 is configured for cloud deployment using Gunicorn as the web server, with the same `render.yaml` setup from version 6-Alpha. The two new runtime dependencies — `PyNaCl==1.5.0` and `base58==2.1.1` — are added to `requirements.txt` and require no special build steps. Environment variables for `JWT_SECRET`, `MERCHANT_WALLET`, and `RPC_URL` must be set before deployment; these are documented in the `.env` template included in the repository.
 
-**Testing and Quality Assurance:** Alpha2 includes a dedicated test suite in `test_wallet_auth.py` that covers nonce generation, Ed25519 key pair creation, server-side signature verification, and session persistence. These tests run without a browser or a real wallet, making them suitable for CI. The existing `test_webapp.py` unit tests for database operations and encryption routes continue to pass unchanged. Security scanning with Snyk and OWASP ZAP from version 6 is carried forward as part of the QA process.
+**Testing and Quality Assurance:** Alpha2 includes a dedicated test suite in `test_wallet_auth.py` that covers nonce generation, Ed25519 key pair creation, server-side signature verification, and session persistence. These tests run without a browser or a real wallet, making them suitable for CI. The existing `test_webapp.py` unit tests for database operations and encryption routes continue to pass unchanged. Security scanning with Snyk and OWASP ZAP from version 6-Alpha is carried forward as part of the QA process.
 
 ---
 
@@ -228,7 +228,7 @@ The move to web3 is more than a technology choice. It changes what a user accoun
 <h2>Changelog:</h2>
 <h3>Logs of Recent Updates:</h3>
 <li>Jan 20 2025 - Updated comments and added a more simple structure for the changes to be made.</li>
-<li>Jan 21st 2025 - Merged the CLI into a webapp using the Flask framework. The current version of the web-application is being hosted at <a href="https://zencrypt.app">zencrypt.app</a></li>
+<li>Jan 21st 2025 - Merged the CLI into a webapp using the Flask framework. The current version of the web-application is being hosted at <a href="https://zencrypt.app">Version 6-Alpha</a></li>
 <li>Jan 22nd 2025 - Users can upload files for encryption and decryption.</li>
 <li>Jan 26th 2025 - Allows users to manage sessions by creating an account and logging in.</li>
 <li>Jan 27th 2025 - Fully merged SQLite and SQLAlchemy into the backend for user authentication and session management.</li>
@@ -241,10 +241,10 @@ The move to web3 is more than a technology choice. It changes what a user accoun
 <h2 id="introduction">Introduction</h2>
 <p> Zencrypt is a decentralized application (dApp) that allows users to hash, encrypt, and decrypt text and files — authenticated entirely through a Solana wallet, with no password required. The dApp runs on the Flask framework and is hosted at <a href="https://zencrypt.app">Here.</a>
     <br>
-    <p>The dApp is built for simplicity and security, combining the encryption suite from version 6 with Solana wallet-based authentication. Users connect their Phantom, Solflare, or Ledger wallet, sign a one-time cryptographic nonce, and are issued a session token — no email, no password, no shared secret stored on the server. Subscription access is handled through Solana Pay, keeping the entire user journey on-chain.</p>
+    <p>The dApp is built for simplicity and security, combining the encryption suite from version 6-Alpha with Solana wallet-based authentication. Users connect their Phantom, Solflare, or Ledger wallet, sign a one-time cryptographic nonce, and are issued a session token — no email, no password, no shared secret stored on the server. Subscription access is handled through Solana Pay, keeping the entire user journey on-chain.</p>
 <h2 id="features">Features</h2>
 <h2>System Overview</h2>
-<p>Zencrypt is a Flask-based decentralized application focused on encryption, hashing, and secure file operations with Solana wallet authentication. The project completes the planned migration from the web2 platform in version 6 to a web3 dApp, while maintaining the same strong cryptographic foundations.</p>
+<p>Zencrypt is a Flask-based decentralized application focused on encryption, hashing, and secure file operations with Solana wallet authentication. The project completes the planned migration from the web2 platform in version 6-Alpha to a web3 dApp, while maintaining the same strong cryptographic foundations.</p>
 <h2>Functions</h2>
 <ul>
   <li>Solana wallet authentication — Phantom, Solflare, and Ledger Live</li>
@@ -400,4 +400,168 @@ The move to web3 is more than a technology choice. It changes what a user accoun
 </body>
 </html>
 
+<!--
+# Zencrypt dApp
+
+Zencrypt is a Flask-based cryptography dApp/backend that combines:
+- Solana wallet authentication (signature verification),
+- wallet/token/NFT-gated access control,
+- user-scoped hashing and encryption features,
+- persistent key and crypto artifact storage with SQLAlchemy.
+
+This README documents the repository as it currently exists.
+
+---
+
+## Project Snapshot (Current Repository State)
+
+- Primary backend entrypoint: `webapp.py`
+- Data models: `models.py`
+- Cryptographic helpers: `utils.py`, `crypto_utils.py`
+- Python dependency manifest: `requirements.txt`
+- Deployment config: `render.yaml`
+- Database migrations scaffold: `migrations/`
+- Static assets: `static/` (`favicon.ico`, wallet/auth JS files)
+
+The implementation is currently centered on a single Flask application module (`webapp.py`) with inline template rendering for most UI pages.
+
+---
+
+## What Is Implemented
+
+### 1) Authentication and Identity
+
+Zencrypt currently supports wallet-authenticated sessions and also retains email/password routes in the UI flow.
+
+Implemented auth-related behavior in `webapp.py`:
+- Session nonce endpoint: `GET /auth/nonce`
+- Wallet signature verification endpoint: `POST /auth/verify`
+- Wallet connect page: `GET /connect-wallet`
+- Session termination: `GET /logout`
+
+Wallet verification path:
+- receives base58 public key + base64 signature + nonce,
+- verifies Ed25519 signature via `PyNaCl`,
+- checks token-gate requirements,
+- upserts a `User` row by `wallet_address`,
+- creates Flask session state (`user_id`, `wallet_address`).
+
+### 2) Access Gating
+
+Two gate mechanisms are present:
+
+1. NFT collection gate helper (`has_zencrypt_pass`) using DAS `searchAssets`
+2. SPL token balance gate (`check_token_balance`) using `getTokenAccountsByOwner`
+
+Runtime gate configuration is environment-driven:
+- `ZENCRYPT_COLLECTION_MINT`
+- `ZENCRYPT_TOKEN_MINT`
+- `ZENCRYPT_MIN_TOKEN_BALANCE`
+- `RPC_URL`
+- `SOLANA_DAS_RPC`
+
+### 3) Core Crypto Features
+
+Implemented feature routes:
+- `GET/POST /` → SHA-256 hash generation (optional salt)
+- `GET/POST /encrypt` → text encryption (Fernet, user key)
+- `GET/POST /decrypt` → text decryption (Fernet, user key)
+- `GET/POST /file` → file processing path using Fernet + base64 handling
+- `GET /pgp` + `POST /pgp/generate|encrypt|decrypt` → RSA-based PGP keypair and message encryption/decryption
+- `GET/POST /argon2` → Argon2 password hashing and ECC key generation actions
+
+### 4) Key Management
+
+Implemented key lifecycle in `webapp.py` and models:
+- per-user active symmetric key initialization (`initialize_key`)
+- active key retrieval for cipher operations (`get_cipher_suite`)
+- key rotation support (`rotate_key`)
+- key export/import routes (`/export-key`, `/import-key`)
+
+### 5) Database Models
+
+`models.py` currently defines:
+- `User`
+- `Hash`
+- `EncryptedText`
+- `Key`
+- `PGPKey`
+- `ECCKey`
+- `ProcessingJob`
+
+SQLAlchemy is initialized in-app, and tables are created at startup under app context.
+
+---
+
+## Repository Architecture Notes
+
+Current architecture in this repository is **single-module Flask app orchestration** (`webapp.py`) with helper modules, not a multi-blueprint split.
+
+### Backend Stack
+
+- Flask
+- Flask-SQLAlchemy
+- Flask-Migrate / Alembic
+- Flask-JWT-Extended (configured)
+- Cryptography primitives via `cryptography`
+- Argon2 (`argon2-cffi`)
+- PyNaCl + base58 for wallet verification
+- Merkle utilities in `crypto_utils.py`
+
+### Frontend/UI Layer
+
+- Server-rendered HTML via `render_template_string` inside route handlers
+- Inline CSS/JS in `webapp.py`
+- Additional JS files under `static/js/` and `static/wallet.js` are present in repository as client-side modules/components
+
+---
+
+## Route Inventory (High-Level)
+
+- Auth/session: `/auth`, `/auth/nonce`, `/auth/verify`, `/connect-wallet`, `/logout`
+- Crypto UI/actions: `/`, `/encrypt`, `/decrypt`, `/file`, `/pgp`, `/pgp/generate`, `/pgp/encrypt`, `/pgp/decrypt`, `/argon2`
+- Key management: `/export-key`, `/import-key`
+- Utility/debug: `/favicon.ico`, `/__session` (non-production)
+
+---
+
+## Configuration Surface
+
+### Environment and Secrets
+
+The repository includes `.env.example` documenting variables for:
+- database URI and path,
+- Flask env flags,
+- session/JWT secrets,
+- key file path/name options,
+- Solana token/NFT gating and RPC settings,
+- optional Picket-related values.
+
+### Deployment
+
+`render.yaml` defines a Python web service using:
+- build: `pip install --upgrade pip && pip install -r requirements.txt`
+- start: `gunicorn webapp:app`
+- Python version pin: `3.11.11`
+
+---
+
+## Security and Ownership Notes
+
+- Wallet auth uses challenge-response signatures (no private keys handled by server).
+- Session and JWT secret material are expected via environment variables.
+- Access gating logic is chain-data-dependent through configured RPC providers.
+
+## Intellectual Property
+
+This repository is proprietary work by the project owner.  
+No open contribution policy is provided in this document.
+
+---
+
+## License
+
+See `LICENSE` and `LICENSE.mp3` in this repository for project licensing terms.
+
+-->
 
