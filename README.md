@@ -280,7 +280,7 @@ The move to web3 is more than a technology choice. It changes what a user accoun
   <li>Once authenticated, use the dApp to hash, encrypt, and decrypt text and files. </li>
 </ol> -->
 <hr>
-    <h2 id="examples">Web3 Login and CLI (v4.2-alpha) Examples:</h2>
+<!--    <h2 id="examples">Web3 Login and CLI (v4.2-alpha) Examples:</h2> -->
     <h3 align="center">Web3 Wallet Login:</h3>
     <center>
       <img alt="Web3 Login" src="https://github.com/ryanshatch/zencrypt_dapp.02/blob/main/WEB3-login.JPG" style="width: 100%; height: 100%;" />
@@ -300,7 +300,7 @@ The move to web3 is more than a technology choice. It changes what a user accoun
 #        <h3 align="center">PGP Encryption:</h3>
 #    <center>
 #      <img alt="Cipher Example" src="https://github.com/ryanshatch/zencrypt/blob/v6.2.2-alpha/img/pgpencryption.PNG" style="width: 100%; height: 50%;" />
-#    </center>
+#    </center> -->
     </p>
     <hr><br>
     <h1 align="center" id="disclaimer"><bold>DISCLAIMER!</bold></h1>
