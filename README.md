@@ -285,22 +285,22 @@ The move to web3 is more than a technology choice. It changes what a user accoun
     <center>
       <img alt="Web3 Login" src="https://github.com/ryanshatch/zencrypt_dapp.02/blob/main/WEB3-login.JPG" style="width: 100%; height: 100%;" />
     </center>
-    <h3 align="center">Hashing:</h3>
+<!--    <h3 align="center">Hashing:</h3>
     <center>
-      <img alt="Hashing Example" src="https://github.com/ryanshatch/zencrypt/blob/v6.2.2-alpha/img/zencrypthash.png" style="width: 100%; height: 100%;" />
-    </center>
-    <h3 align="center">Cipher:</h3>
-    <center>
-      <img alt="Cipher Example" src="https://github.com/ryanshatch/zencrypt/blob/v6.2.2-alpha/img/zencrypt.PNG" style="width: 100%; height: 100%;" />
-    </center>
-    <h3 align="center">Encrypting Parsed Files:</h3>
-    <center>
-      <img alt="Cipher Example" src="https://github.com/ryanshatch/zencrypt/blob/v6.2.2-alpha/img/encrypt.PNG" style="width: 100%; height: 50%;" />
-    </center>
-        <h3 align="center">PGP Encryption:</h3>
-    <center>
-      <img alt="Cipher Example" src="https://github.com/ryanshatch/zencrypt/blob/v6.2.2-alpha/img/pgpencryption.PNG" style="width: 100%; height: 50%;" />
-    </center>
+#      <img alt="Hashing Example" src="https://github.com/ryanshatch/zencrypt/blob/v6.2.2-alpha/img/zencrypthash.png" style="width: 100%; height: 100%;" />
+#    </center>
+#    <h3 align="center">Cipher:</h3>
+#    <center>
+#      <img alt="Cipher Example" src="https://github.com/ryanshatch/zencrypt/blob/v6.2.2-alpha/img/zencrypt.PNG" style="width: 100%; height: 100%;" />
+#    </center>
+#    <h3 align="center">Encrypting Parsed Files:</h3>
+#    <center>
+#      <img alt="Cipher Example" src="https://github.com/ryanshatch/zencrypt/blob/v6.2.2-alpha/img/encrypt.PNG" style="width: 100%; height: 50%;" />
+#    </center>
+#        <h3 align="center">PGP Encryption:</h3>
+#    <center>
+#      <img alt="Cipher Example" src="https://github.com/ryanshatch/zencrypt/blob/v6.2.2-alpha/img/pgpencryption.PNG" style="width: 100%; height: 50%;" />
+#    </center>
     </p>
     <hr><br>
     <h1 align="center" id="disclaimer"><bold>DISCLAIMER!</bold></h1>
